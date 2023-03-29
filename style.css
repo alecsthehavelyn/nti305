@@ -23,7 +23,7 @@ header{
 }  
 
 .container{
-    height: 200px;
+    height: 100px;
     color: white;
     width: 100%; 
 }
@@ -31,9 +31,9 @@ header{
 h2.a{
     text-align: center;
     position: relative;
-    top: 60px;
+    top: 30px;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 20px;
     
 }
 /* FIM DO CABEÇALHO */
@@ -49,91 +49,46 @@ nav{
     background-image: linear-gradient(to right, #006386 , #00BCFF); 
 }
 
-.container1{
-    height: 60px;
-    color: white;
-    width: 100%; 
-}
-
-a.a{
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: linear-gradient(to right, #004586 , #0083FF); 
+    overflow: auto;
+    border: 1px solid white;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
     color: white;
     text-decoration: none;
-}
+    font-size: 17px;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: lightblue;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+    background-color: linear-gradient(to right, #006386 , #00BCFF); 
+  }
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+  
 
-.cta {
-    position: relative;
-    bottom: 12%;
-    margin: 10px;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    float: right;
-   }
-   
-   .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #008FC2;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-   }
-   
-   .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: white;
-    
-   }
-   
-   .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #234567;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-   }
-   
-   .cta:hover:before {
-    width: 100%;
-    background: #006386;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active {
-    transform: scale(0.95);
-   }
-
-   h2.b{
-    width: 50%;
-    height: 5px;
-    text-align: center;
-    position: relative;
-    top: 12px;
-    font-weight: 900;
-    font-family: "Ubuntu", sans-serif;  
-}
 /* FIM NAVEGAÇÃO */
 
 
@@ -147,71 +102,6 @@ main{
     height: 600px;
     
 }
-
-.card {
-    width: 230px;
-    height: 400px;
-    margin: 0 auto;
-    background-color: #011522;
-    border-radius: 8px;
-    z-index: 1;
-    background-image: linear-gradient(to right, #004586 , #0083FF);
-    position: relative;
-    top: 20%;
-   }
-   
-   .tools {
-    display: flex;
-    align-items: center;
-    padding: 9px;
-   }
-   
-   .circle {
-    padding: 0 4px;
-   }
-   
-   .box {
-    display: inline-block;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-    padding: 1px;
-    border-radius: 50%;
-   }
-   
-   .red {
-    background-color: #ff605c;
-   }
-   
-   .yellow {
-    background-color: #ffbd44;
-   }
-   
-   .green {
-    background-color: #00ca4e;
-   }
-   
-h2.cardcontent{
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
-}
-
-span.cardcontent{
-   color: white;
-   font-family: "Ubuntu", sans-serif; 
-   font-size: 10px;
-   text-align: justify;
-   position: relative;
-   left: 3px;
-   top: 15px;
-
-
-   
-
-}
-
-
 
 
 
