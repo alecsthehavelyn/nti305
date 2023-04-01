@@ -47,7 +47,7 @@ nav{
     position: relative;
     bottom: 0px;
     display: flex;
-    margin: 3px;
+    margin: 1px;
     flex: 1 1 100vw;
     background-image: linear-gradient(to right, #000000 , #35393A);
 }
@@ -114,14 +114,15 @@ main{
     
 }
 
+
 h2.teste{
-  width: 100vw;
+  width: 40vw;
   color: white;
-  font-size: 3vw;
+  font-size: 7vw;
+  font-size: 7vh;
   text-align: center;
   position: relative;
   top: 20vh;
-  right: 45vh;
   font-family: helvetica, sans-serif;
 }
 
