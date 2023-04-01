@@ -45,7 +45,7 @@ h2.a{
 /* INICIO NAVEGAÇÃO */
 nav{
     position: relative;
-   bottom: 0px;
+    bottom: 0px;
     display: flex;
     margin: 3px;
     flex: 1 1 100vw;
@@ -105,19 +105,19 @@ a.active{
 /* INICIO PRINCIPAL */
 
 main{
-    
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 80vh;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #000000 , #35393A); 
+    
 }
 
 h2.teste{
-
+  width: 100vw;
   color: white;
-  font-size: 72px;
+  font-size: 3vw;
   text-align: center;
   position: relative;
   top: 20vh;
